@@ -32,7 +32,7 @@ class fibonacci_jump_dp{
             num[i] = Integer.parseInt(input[i].trim());
         }
 
-        System.out.print(disp(num[0], num[1], num[2]));
+        // System.out.print(disp(num[0], num[1], num[2]));
         sc.close();
     }
 }
