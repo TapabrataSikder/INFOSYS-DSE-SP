@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 
 public class Greedy_Infinite_desert_journey {
@@ -16,10 +15,10 @@ public class Greedy_Infinite_desert_journey {
         int start=0, currentGas=0;
         
         for(int i=0;i<gas.length;i++){
-            currentGas = gas[i] - cost[i];
+            currentGas += gas[i] - cost[i];
             if(currentGas < 0)
             {
-                start +=1;
+                start =i+1;
                 currentGas=0;
             }
         }
